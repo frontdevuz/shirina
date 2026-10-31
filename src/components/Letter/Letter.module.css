@@ -93,12 +93,17 @@
 
 @media (max-width: 600px) {
   .parchment {
-    padding: 36px 28px;
+    padding: 36px 22px;
   }
   .dear {
     font-size: 36px;
   }
   .body {
     font-size: 17px;
+  }
+  .startBtn {
+    width: 100%;
+    justify-content: center;
+    padding-inline: 20px;
   }
 }

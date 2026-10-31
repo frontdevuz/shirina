@@ -85,7 +85,17 @@
 }
 
 @media (max-width: 600px) {
+  .section {
+    padding: 60px 16px;
+  }
   .title {
     font-size: 28px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .cardInner {
+    padding: 24px 20px;
   }
 }

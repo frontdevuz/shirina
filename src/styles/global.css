@@ -15,6 +15,27 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+button,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  body {
+    min-width: 0;
+  }
+
+  main {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

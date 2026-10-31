@@ -71,7 +71,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
   gap: 28px;
 }
 
@@ -200,5 +200,16 @@
   }
   .cardImageWrapper {
     height: 180px;
+  }
+  .grid {
+    gap: 18px;
+  }
+  .cardBody {
+    padding: 20px 18px;
+  }
+  .quote {
+    font-size: 21px;
+    padding: 24px 18px;
+    margin-top: 32px;
   }
 }

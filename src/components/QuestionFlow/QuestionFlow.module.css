@@ -258,10 +258,36 @@
 }
 
 @media (max-width: 600px) {
+  .section {
+    padding: 60px 16px;
+  }
+  .sectionTitle {
+    font-size: 30px;
+  }
   .questionText {
     font-size: 21px;
   }
   .questionCard {
     padding: 28px 20px;
+  }
+  .navRow {
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  .navBtn {
+    flex: 1 1 calc(50% - 6px);
+    justify-content: center;
+    padding-inline: 12px;
+  }
+  .skipBtn {
+    order: 3;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  .doneBox {
+    padding: 40px 22px;
+  }
+  .doneTitle {
+    font-size: 40px;
   }
 }
