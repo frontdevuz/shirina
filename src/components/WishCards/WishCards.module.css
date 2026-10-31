@@ -1,0 +1,91 @@
+.section {
+  padding: 80px 24px;
+  background:
+    radial-gradient(circle at 15% 40%, rgba(216, 167, 172, 0.2) 0%, transparent 55%),
+    radial-gradient(circle at 85% 60%, rgba(198, 164, 106, 0.12) 0%, transparent 55%),
+    var(--warm-cream);
+}
+
+.header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 56px;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--burgundy);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--text-dark);
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.divider {
+  color: var(--muted-gold);
+  font-size: 14px;
+  letter-spacing: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(249, 244, 238, 0.9);
+  border: 1px solid rgba(198, 164, 106, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(70, 53, 58, 0.07);
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  overflow: hidden;
+}
+
+.cardInner {
+  padding: 32px 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  height: 100%;
+}
+
+.ornamentTop {
+  color: var(--muted-gold);
+  font-size: 14px;
+}
+
+.wishText {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px;
+  font-style: italic;
+  color: var(--text-dark);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.ornamentBottom {
+  color: var(--dusty-rose);
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 28px;
+  }
+}

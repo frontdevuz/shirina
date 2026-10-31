@@ -1,0 +1,104 @@
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(234, 217, 213, 0.4) 0%, transparent 60%),
+    radial-gradient(circle at 20% 80%, rgba(198, 164, 106, 0.15) 0%, transparent 50%),
+    var(--ivory);
+}
+
+.parchment {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+  background:
+    radial-gradient(circle at top right, rgba(234, 217, 213, 0.4), transparent 60%),
+    linear-gradient(180deg, #FFFDF9 0%, #F9F3E9 55%, #F2E8D9 100%);
+  border: 1px solid rgba(198, 164, 106, 0.55);
+  border-radius: 16px;
+  padding: 56px 52px;
+  box-shadow:
+    0 30px 70px rgba(45, 30, 35, 0.12),
+    inset 0 0 40px rgba(198, 164, 106, 0.08);
+  text-align: center;
+}
+
+.parchment::before {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(198, 164, 106, 0.3);
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.ornament {
+  color: var(--muted-gold);
+  font-size: 16px;
+  letter-spacing: 8px;
+  margin-bottom: 24px;
+}
+
+.waxSeal {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 6px 14px rgba(116, 61, 80, 0.3));
+}
+
+.dear {
+  font-family: 'Great Vibes', cursive;
+  font-size: 48px;
+  color: var(--burgundy);
+  margin-bottom: 28px;
+  line-height: 1.2;
+}
+
+.body {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.75;
+  color: var(--text-dark);
+  margin-bottom: 18px;
+}
+
+.startBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+  background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
+  color: var(--ivory);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  padding: 14px 36px;
+  border-radius: 999px;
+  border: 1px solid rgba(198, 164, 106, 0.5);
+  cursor: pointer;
+  box-shadow:
+    0 12px 28px rgba(116, 61, 80, 0.28),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.startBtn:hover {
+  box-shadow: 0 16px 36px rgba(116, 61, 80, 0.38), 0 0 20px rgba(198, 164, 106, 0.35);
+}
+
+@media (max-width: 600px) {
+  .parchment {
+    padding: 36px 28px;
+  }
+  .dear {
+    font-size: 36px;
+  }
+  .body {
+    font-size: 17px;
+  }
+}
